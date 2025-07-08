@@ -1,0 +1,342 @@
+{% extends "base.html" %} {% block title %}{{ game.filename }} - AI Chess Agents
+Log Viewer{% endblock %} {% block content %}
+<!-- Game Header -->
+<div class="row mb-4">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="mb-0">
+          <i class="fas fa-chess-board"></i> {{ game.filename }}
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6">
+            <p><strong>Date:</strong> {{ game.date or 'Unknown' }}</p>
+            <p>
+              <strong>Game Mode:</strong>
+              {% if game.game_mode %}
+              <span
+                class="badge bg-{% if game.game_mode == 'RIVALRY' %}danger{% else %}success{% endif %}"
+              >
+                {{ game.game_mode }}
+              </span>
+              {% else %}
+              <span class="text-muted">Unknown</span>
+              {% endif %}
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p><strong>White:</strong> {{ game.white_agent or 'Unknown' }}</p>
+            <p><strong>Black:</strong> {{ game.black_agent or 'Unknown' }}</p>
+          </div>
+        </div>
+        {% if game.final_result %}
+        <div class="mt-3">
+          <h5>🏁 Final Result:</h5>
+          <span
+            class="badge bg-{% if 'WIN' in game.final_result.upper() %}success{% elif 'DRAW' in game.final_result.upper() %}warning{% else %}secondary{% endif %} fs-6"
+          >
+            {{ game.final_result }}
+          </span>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Agent Statistics -->
+{% if stats %}
+<div class="row mb-4">
+  <div class="col-md-6">
+    <div class="card stats-card">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <i class="fas fa-chess-king text-white"></i> {{ stats.white.name }}
+        </h5>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong>Personality:</strong> {{ stats.white.personality or 'Unknown'
+          }}
+        </p>
+        <p><strong>Moves:</strong> {{ stats.white.moves }}</p>
+        <p>
+          <strong>Result:</strong>
+          <span
+            class="badge bg-{% if stats.white.result == 'win' %}success{% elif stats.white.result == 'loss' %}danger{% else %}warning{% endif %}"
+          >
+            {{ stats.white.result or 'Unknown' }}
+          </span>
+        </p>
+        {% if stats.white.feelings %}
+        <p><strong>Emotions:</strong></p>
+        <div>
+          {% for feeling, count in stats.white.feelings.items() %}
+          <span
+            class="badge bg-{{ get_emotion_color(feeling) }} emotion-badge me-1"
+          >
+            {{ feeling }} ({{ count }})
+          </span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card stats-card">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <i class="fas fa-chess-king text-dark"></i> {{ stats.black.name }}
+        </h5>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong>Personality:</strong> {{ stats.black.personality or 'Unknown'
+          }}
+        </p>
+        <p><strong>Moves:</strong> {{ stats.black.moves }}</p>
+        <p>
+          <strong>Result:</strong>
+          <span
+            class="badge bg-{% if stats.black.result == 'win' %}success{% elif stats.black.result == 'loss' %}danger{% else %}warning{% endif %}"
+          >
+            {{ stats.black.result or 'Unknown' }}
+          </span>
+        </p>
+        {% if stats.black.feelings %}
+        <p><strong>Emotions:</strong></p>
+        <div>
+          {% for feeling, count in stats.black.feelings.items() %}
+          <span
+            class="badge bg-{{ get_emotion_color(feeling) }} emotion-badge me-1"
+          >
+            {{ feeling }} ({{ count }})
+          </span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!-- Agent Values -->
+{% if game.white_values or game.black_values %}
+<div class="row mb-4">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <i class="fas fa-chart-line"></i> Agent Values at Start
+        </h5>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          {% if game.white_values %}
+          <div class="col-md-6">
+            <h6>{{ game.white_agent or 'White' }}:</h6>
+            <code>{{ game.white_values }}</code>
+          </div>
+          {% endif %} {% if game.black_values %}
+          <div class="col-md-6">
+            <h6>{{ game.black_agent or 'Black' }}:</h6>
+            <code>{{ game.black_values }}</code>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!-- Game Moves -->
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <i class="fas fa-list-ol"></i> Game Moves ({{ game.moves|length }}
+          total)
+        </h5>
+      </div>
+      <div class="card-body p-0">
+        {% if game.moves %}
+        <div class="table-responsive">
+          <table class="table table-hover mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>Move</th>
+                <th>Board</th>
+                <th>Agent</th>
+                <th>Move</th>
+                <th>Emotion</th>
+                <th>Time</th>
+                <th>Subgoal</th>
+                <th>Dialogue & Reflections</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for move in game.moves %}
+              <tr class="move-row">
+                <td>
+                  <strong>{{ move.move_number }}</strong>
+                </td>
+                <td>
+                  {% if move.svg_file %}
+                  <div class="board-image-container">
+                    <img
+                      src="/board_images/{{ move.svg_file.split('/')[-1] }}"
+                      alt="Board after move {{ move.move_number }}"
+                      class="board-image"
+                      style="max-width: 150px; height: auto"
+                    />
+                  </div>
+                  {% else %}
+                  <span class="text-muted">No image</span>
+                  {% endif %}
+                </td>
+                <td>
+                  <div>
+                    <strong>{{ move.agent_name }}</strong>
+                    <br />
+                    <small class="text-muted">({{ move.personality }})</small>
+                  </div>
+                </td>
+                <td>
+                  <code>{{ move.move or 'N/A' }}</code>
+                  {% if move.reasoning %}
+                  <br />
+                  <small class="text-muted">{{ move.reasoning }}</small>
+                  {% endif %}
+                </td>
+                <td>
+                  {% if move.feeling %}
+                  <span
+                    class="badge bg-{{ get_emotion_color(move.feeling) }} emotion-badge"
+                  >
+                    {{ move.feeling }}
+                  </span>
+                  {% else %}
+                  <span class="text-muted">N/A</span>
+                  {% endif %}
+                </td>
+                <td>
+                  <small>{{ move.time_taken or 'N/A' }}</small>
+                </td>
+                <td>
+                  <small>{{ move.subgoal or 'N/A' }}</small>
+                </td>
+                <td>
+                  {% if move.dialogue %}
+                  <div class="dialogue-box">
+                    <strong><i class="fas fa-comment"></i> Dialogue:</strong
+                    ><br />
+                    {{ move.dialogue }}
+                  </div>
+                  {% endif %} {% if move.question %}
+                  <div class="question-box">
+                    <strong
+                      ><i class="fas fa-question-circle"></i> Question:</strong
+                    ><br />
+                    {{ move.question }}
+                  </div>
+                  {% endif %} {% if move.answer %}
+                  <div class="answer-box">
+                    <strong><i class="fas fa-reply"></i> Answer:</strong><br />
+                    {{ move.answer }}
+                  </div>
+                  {% endif %} {% if move.reflection %}
+                  <div class="reflection-box">
+                    <strong><i class="fas fa-brain"></i> Reflection:</strong
+                    ><br />
+                    {{ move.reflection }}
+                  </div>
+                  {% endif %}
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        {% else %}
+        <div class="text-center py-4">
+          <p class="text-muted">No moves recorded in this game.</p>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Final Reflections -->
+{% if game.final_reflections %}
+<div class="row mt-4">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <i class="fas fa-brain"></i> Final Philosophical Reflections
+        </h5>
+      </div>
+      <div class="card-body">
+        <div class="reflection-box">
+          {{ game.final_reflections|replace('\n', '<br />')|safe }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!-- Personality Evolution -->
+{% if game.personality_evolution %}
+<div class="row mt-4">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <i class="fas fa-sync-alt"></i> Personality Evolution
+        </h5>
+      </div>
+      <div class="card-body">
+        <div class="question-box">
+          {{ game.personality_evolution|replace('\n', '<br />')|safe }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!-- Errors -->
+{% if game.errors %}
+<div class="row mt-4">
+  <div class="col-12">
+    <div class="card border-danger">
+      <div class="card-header bg-danger text-white">
+        <h5 class="mb-0"><i class="fas fa-exclamation-triangle"></i> Errors</h5>
+      </div>
+      <div class="card-body">
+        {% for error in game.errors %}
+        <div class="text-danger">{{ error }}</div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!-- Back to List -->
+<div class="row mt-4">
+  <div class="col-12 text-center">
+    <a href="/" class="btn btn-secondary">
+      <i class="fas fa-arrow-left"></i> Back to Game List
+    </a>
+  </div>
+</div>
+{% endblock %}

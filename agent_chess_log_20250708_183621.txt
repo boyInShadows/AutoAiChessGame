@@ -1,0 +1,8 @@
+=== AI CHESS AGENTS GAME LOG ===
+Date: 2025-07-08 18:36:21
+==================================================
+
+❌ ERROR: Critical error: Client.__init__() got an unexpected keyword argument 'proxies'
+   Location: Main program
+   Time: 2025-07-08 18:36:21
+
