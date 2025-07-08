@@ -313,6 +313,26 @@ Log Viewer{% endblock %} {% block content %}
 </div>
 {% endif %}
 
+<!-- Human Feedback -->
+{% if game.human_feedback %}
+<div class="row mt-4">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <i class="fas fa-user-check"></i> Human Feedback & AI Interpretation
+        </h5>
+      </div>
+      <div class="card-body">
+        <div class="feedback-box">
+          {{ game.human_feedback|replace('\n', '<br />')|safe }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
 <!-- Errors -->
 {% if game.errors %}
 <div class="row mt-4">

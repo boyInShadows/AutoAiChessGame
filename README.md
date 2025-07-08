@@ -42,6 +42,8 @@ This project implements sophisticated AI chess agents that go far beyond simple 
 - **Core belief evolution**: Agents develop and modify their fundamental beliefs about chess and strategy
 - **Personality evolution**: Subtle personality shifts based on experience and reflection
 - **Value-based move selection**: Moves influenced by learned preferences and past success
+- **Human feedback integration**: Agents learn from human observer ratings and comments
+- **AI self-improvement**: GPT-powered interpretation of feedback for continuous learning
 
 ### 📊 Web-Based Log Viewer
 
@@ -94,9 +96,16 @@ This project implements sophisticated AI chess agents that go far beyond simple 
    - **Collaborative Mode**: Supportive gameplay with advice and encouragement
 
 3. **Watch the agents play:**
+
    - Each agent has 10 seconds per move
    - Observe their dialogue, questions, and reflections
    - See how their emotions and strategies evolve
+
+4. **Provide human feedback:**
+   - Rate each agent's strategy (1-10)
+   - Rate each agent's personality (1-10)
+   - Add optional comments for detailed feedback
+   - Watch as agents interpret and learn from your feedback
 
 ### Viewing Game Logs
 
@@ -174,6 +183,8 @@ Values change based on:
 - **Belief formation**: New insights become core beliefs
 - **Strategy refinement**: Successful patterns are reinforced
 - **Personality adaptation**: Subtle shifts based on experience
+- **Human feedback learning**: Values adjust based on human observer ratings
+- **AI interpretation**: GPT analyzes feedback for actionable improvements
 
 ## 🎮 Game Features
 
@@ -212,6 +223,7 @@ Values change based on:
 - **Move-by-move analysis** with dialogue
 - **Agent statistics** and emotion tracking
 - **Final reflections** and personality evolution
+- **Human feedback** and AI interpretations
 - **Color-coded emotions** and game modes
 
 ### Interactive Elements
@@ -256,6 +268,8 @@ chess_game/
 - **Chess strategy analysis**: Study different playing styles
 - **Personality modeling**: Understand AI personality development
 - **Educational tool**: Learn chess through AI interaction
+- **Human-AI interaction research**: Study feedback loops and learning mechanisms
+- **AI self-improvement**: Explore how AI interprets and acts on human feedback
 
 ### Entertainment
 

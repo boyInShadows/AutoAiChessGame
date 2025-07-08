@@ -75,6 +75,17 @@ def save_logs_on_exit():
                     if entry.get("black_evolved"):
                         f.write(f"   {current_game_state.get('agent_black', 'Black')}: {entry['black_personality']}\n")
                     f.write("=" * 50 + "\n\n")
+                elif entry.get("type") == "human_feedback":
+                    f.write("🎯 HUMAN FEEDBACK:\n")
+                    f.write(f"   {current_game_state.get('agent_white', 'White')} - Strategy: {entry['white_strategy']}/10, Personality: {entry['white_personality']}/10\n")
+                    if entry.get('white_comments'):
+                        f.write(f"   Comments: {entry['white_comments']}\n")
+                    f.write(f"   Interpretation: {entry['white_interpretation']}\n")
+                    f.write(f"   {current_game_state.get('agent_black', 'Black')} - Strategy: {entry['black_strategy']}/10, Personality: {entry['black_personality']}/10\n")
+                    if entry.get('black_comments'):
+                        f.write(f"   Comments: {entry['black_comments']}\n")
+                    f.write(f"   Interpretation: {entry['black_interpretation']}\n")
+                    f.write("=" * 50 + "\n\n")
             
             if not game_logs:
                 f.write("⚠️ Game was interrupted before any moves were made.\n")
@@ -576,6 +587,17 @@ Your subgoal: {self.subgoal}
                 new_personality = evolution.get("new_personality", "unknown")
                 trigger = evolution.get("trigger", "unknown")
                 print(f"  {old_personality} → {new_personality} ({trigger})")
+        
+        # Show human feedback history
+        human_feedbacks = len([m for m in self.memory if m.get("type") == "human_feedback"])
+        if human_feedbacks > 0:
+            print("🎯 Human Feedback History:")
+            for feedback in [m for m in self.memory if m.get("type") == "human_feedback"]:
+                strategy = feedback.get("strategy_rating", "unknown")
+                personality = feedback.get("personality_rating", "unknown")
+                print(f"  Strategy: {strategy}/10, Personality: {personality}/10")
+                if feedback.get("feedback_comments"):
+                    print(f"    Comments: {feedback['feedback_comments']}")
 
     def generate_philosophical_reflection(self, game_result, opponent_name, game_length, final_board_fen):
         """Generate a philosophical reflection on the entire game experience"""
@@ -802,6 +824,136 @@ Be conservative - only suggest change if there's clear evidence of evolution.
         except Exception as e:
             print(f"⚠️ Warning: Personality evolution failed for {self.name}: {e}")
             return False
+
+    def interpret_human_feedback(self, strategy_rating, personality_rating, feedback_comments=None):
+        """Use GPT to interpret human feedback and suggest self-improvement"""
+        if not self.openai_client:
+            return f"[No OpenAI client configured for {self.name}]"
+        
+        try:
+            # Get recent game context
+            recent_moves = [m for m in self.memory[-10:] if m.get("type") == "move"]
+            recent_results = [m for m in self.memory if m.get("type") == "game_result"][-3:]
+            
+            # Create context summary
+            move_summary = "\n".join([
+                f"Turn {m['turn']}: {m['feeling']} - {m['move']} ({m['subgoal']})"
+                for m in recent_moves[-5:]  # Last 5 moves
+            ])
+            
+            result_summary = "\n".join([
+                f"vs {r['opponent']}: {r['result']} (length: {r.get('game_length', 'unknown')})"
+                for r in recent_results
+            ])
+            
+            # Get current beliefs if they exist
+            current_beliefs = getattr(self, 'core_beliefs', [
+                "Chess is a game of strategy and patience",
+                "Every move should have a purpose",
+                "Adaptation is key to success"
+            ])
+            
+            prompt = f"""
+You are {self.name}, a chess AI with a {self.personality} personality. A human observer has just rated your performance:
+
+Strategy Rating: {strategy_rating}/10
+Personality Rating: {personality_rating}/10
+{f"Additional Feedback: {feedback_comments}" if feedback_comments else ""}
+
+Your current values: Aggression={self.values['aggression_level']:.2f}, Risk={self.values['risk_tolerance']:.2f}, Patience={self.values['patience']:.2f}, Creativity={self.values['creativity']:.2f}, Adaptability={self.values['adaptability']:.2f}
+
+Your recent game experience:
+{move_summary}
+
+Your recent results:
+{result_summary}
+
+Your current core beliefs:
+{chr(10).join(f"- {belief}" for belief in current_beliefs)}
+
+Based on this human feedback, analyze what you can learn and how you should improve. Consider:
+
+1. What does the strategy rating tell you about your tactical and strategic play?
+2. What does the personality rating reveal about how your character was perceived?
+3. How should you adjust your values or beliefs based on this feedback?
+4. What specific improvements should you make to your playing style?
+
+Write a brief self-improvement analysis (2-3 sentences) that shows you understand the feedback and have concrete plans to improve.
+"""
+            
+            response = self.openai_client.chat.completions.create(
+                model=self.model,
+                messages=[{"role": "user", "content": prompt}],
+                max_tokens=120,
+                timeout=10
+            )
+            
+            interpretation = response.choices[0].message.content.strip()
+            
+            # Update values based on feedback
+            self._update_values_from_feedback(strategy_rating, personality_rating)
+            
+            # Add feedback to memory
+            feedback_record = {
+                "type": "human_feedback",
+                "strategy_rating": strategy_rating,
+                "personality_rating": personality_rating,
+                "feedback_comments": feedback_comments,
+                "interpretation": interpretation,
+                "values_before": self.memory[-1]["values"] if self.memory and self.memory[-1].get("type") == "move" else None,
+                "values_after": self.values.copy(),
+                "timestamp": time.strftime('%Y-%m-%d %H:%M:%S')
+            }
+            self.memory.append(feedback_record)
+            
+            return interpretation
+            
+        except Exception as e:
+            return f"[Feedback interpretation failed: {e}]"
+
+    def _update_values_from_feedback(self, strategy_rating, personality_rating):
+        """Update agent values based on human feedback ratings"""
+        try:
+            # Calculate adjustment factors
+            strategy_factor = (strategy_rating - 5) / 10  # -0.5 to +0.5
+            personality_factor = (personality_rating - 5) / 10  # -0.5 to +0.5
+            
+            base_adjustment = 0.05  # Smaller adjustments for human feedback
+            
+            # Strategy rating affects tactical values
+            if strategy_rating > 7:
+                # High strategy rating - reinforce current successful approach
+                self.values["creativity"] = min(1.0, self.values["creativity"] + base_adjustment)
+                self.values["adaptability"] = min(1.0, self.values["adaptability"] + base_adjustment)
+            elif strategy_rating < 4:
+                # Low strategy rating - encourage more careful play
+                self.values["patience"] = min(1.0, self.values["patience"] + base_adjustment * 1.5)
+                self.values["risk_tolerance"] = max(0.0, self.values["risk_tolerance"] - base_adjustment)
+            
+            # Personality rating affects social/behavioral values
+            if personality_rating > 7:
+                # High personality rating - maintain current character
+                # Slight boost to creativity and adaptability
+                self.values["creativity"] = min(1.0, self.values["creativity"] + base_adjustment * 0.5)
+            elif personality_rating < 4:
+                # Low personality rating - encourage more engaging behavior
+                self.values["creativity"] = min(1.0, self.values["creativity"] + base_adjustment)
+                self.values["adaptability"] = min(1.0, self.values["adaptability"] + base_adjustment)
+            
+            # Personality-specific adjustments
+            if self.personality == "aggressive":
+                if strategy_rating < 4:
+                    # Aggressive agent getting low strategy rating - reduce aggression
+                    self.values["aggression_level"] = max(0.3, self.values["aggression_level"] - base_adjustment)
+            elif self.personality == "defensive":
+                if strategy_rating < 4:
+                    # Defensive agent getting low strategy rating - increase aggression slightly
+                    self.values["aggression_level"] = min(0.7, self.values["aggression_level"] + base_adjustment)
+            
+            print(f"🔄 {self.name} values updated from feedback: Strategy={strategy_rating}/10, Personality={personality_rating}/10")
+            
+        except Exception as e:
+            print(f"⚠️ Warning: Failed to update values from feedback for {self.name}: {e}")
 
 class ChessGame:
     def __init__(self, agent_white, agent_black, mode="rivalry"):
@@ -1147,6 +1299,86 @@ if __name__ == "__main__":
             # Update agent values based on result
             agent_white.update_values("draw", agent_black.name, game_length)
             agent_black.update_values("draw", agent_white.name, game_length)
+        
+        # Human feedback system
+        print("\n" + "="*60)
+        print("🎯 HUMAN FEEDBACK SYSTEM")
+        print("="*60)
+        print("Please rate each agent's performance in this game.")
+        print("Rate from 1-10 where 10 is excellent and 1 is poor.")
+        print()
+        
+        # Get feedback for White agent
+        print(f"📊 Rating {agent_white.name} ({agent_white.personality}):")
+        try:
+            white_strategy = int(input("Strategy rating (1-10): "))
+            if not 1 <= white_strategy <= 10:
+                white_strategy = 5
+                print("Invalid rating, using 5 as default.")
+        except (ValueError, KeyboardInterrupt):
+            white_strategy = 5
+            print("Invalid input, using 5 as default.")
+        
+        try:
+            white_personality = int(input("Personality rating (1-10): "))
+            if not 1 <= white_personality <= 10:
+                white_personality = 5
+                print("Invalid rating, using 5 as default.")
+        except (ValueError, KeyboardInterrupt):
+            white_personality = 5
+            print("Invalid input, using 5 as default.")
+        
+        white_comments = input("Additional feedback (optional): ").strip()
+        if not white_comments:
+            white_comments = None
+        
+        print()
+        
+        # Get feedback for Black agent
+        print(f"📊 Rating {agent_black.name} ({agent_black.personality}):")
+        try:
+            black_strategy = int(input("Strategy rating (1-10): "))
+            if not 1 <= black_strategy <= 10:
+                black_strategy = 5
+                print("Invalid rating, using 5 as default.")
+        except (ValueError, KeyboardInterrupt):
+            black_strategy = 5
+            print("Invalid input, using 5 as default.")
+        
+        try:
+            black_personality = int(input("Personality rating (1-10): "))
+            if not 1 <= black_personality <= 10:
+                black_personality = 5
+                print("Invalid rating, using 5 as default.")
+        except (ValueError, KeyboardInterrupt):
+            black_personality = 5
+            print("Invalid input, using 5 as default.")
+        
+        black_comments = input("Additional feedback (optional): ").strip()
+        if not black_comments:
+            black_comments = None
+        
+        print("\n🧠 Processing feedback with AI interpretation...")
+        
+        # Get AI interpretations
+        white_interpretation = agent_white.interpret_human_feedback(white_strategy, white_personality, white_comments)
+        black_interpretation = agent_black.interpret_human_feedback(black_strategy, black_personality, black_comments)
+        
+        print(f"\n💭 {agent_white.name}'s interpretation: {white_interpretation}")
+        print(f"💭 {agent_black.name}'s interpretation: {black_interpretation}")
+        
+        # Add feedback to game logs
+        game_logs.append({
+            "type": "human_feedback",
+            "white_strategy": white_strategy,
+            "white_personality": white_personality,
+            "white_comments": white_comments,
+            "white_interpretation": white_interpretation,
+            "black_strategy": black_strategy,
+            "black_personality": black_personality,
+            "black_comments": black_comments,
+            "black_interpretation": black_interpretation
+        })
         
         # Save agent memories
         print("\n💾 Saving agent memories...")

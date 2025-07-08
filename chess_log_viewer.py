@@ -26,6 +26,7 @@ def parse_game_log(log_file_path):
             'final_result': None,
             'final_reflections': None,
             'personality_evolution': None,
+            'human_feedback': None,
             'errors': []
         }
         
@@ -65,6 +66,15 @@ def parse_game_log(log_file_path):
                         evolution_lines.append(lines[i].strip())
                     i += 1
                 game_data['personality_evolution'] = '\n'.join(evolution_lines)
+            elif line.startswith('🎯 HUMAN FEEDBACK:'):
+                # Parse human feedback
+                feedback_lines = []
+                i = lines.index(line) + 1
+                while i < len(lines) and not lines[i].startswith('='):
+                    if lines[i].strip():
+                        feedback_lines.append(lines[i].strip())
+                    i += 1
+                game_data['human_feedback'] = '\n'.join(feedback_lines)
             elif line.startswith('❌ ERROR:'):
                 game_data['errors'].append(line.strip())
         

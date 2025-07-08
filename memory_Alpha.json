@@ -4,919 +4,935 @@
   "memory": [
     {
       "type": "move",
-      "turn": 211,
-      "feeling": "nervous",
-      "move": "g7g8",
-      "board": "b5K1/4k3/8/8/8/1r5N/8/8 b - - 28 106",
-      "opponent_message": "With my move h1a8, I am reinforcing my defensive strategy and preparing to counter any aggressive advancements. Let's see how our strategies unfold as the game progresses.",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Exploit the weakened king position by creating threats on the king side and controlling key squares. Consider advancing pawns or coordinating pieces to create",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:12:52"
-    },
-    {
-      "type": "move",
-      "turn": 213,
-      "feeling": "determined",
-      "move": "h3f2",
-      "board": "6K1/4k3/8/8/8/1r6/5Nb1/8 b - - 30 107",
-      "opponent_message": "\"A strategic battle indeed! Your determination is commendable. Let's see how our strategies unfold and may the best player emerge victorious in this game.\"",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Focus on dominating the center with the knight and create threats against the opponent's king.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:13:02"
-    },
-    {
-      "type": "move",
-      "turn": 215,
-      "feeling": "determined",
-      "move": "g8h8",
-      "board": "7K/4k3/8/8/8/4r3/5Nb1/8 b - - 32 108",
-      "opponent_message": "I appreciate your strategic approach, but I am determined to utilize my pieces effectively and counter your threats. Let's see how our clash unfolds on the board. Good luck to you too!",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Focus on controlling the center of the board and putting pressure on the opponent's pieces. Look for opportunities to execute tactical maneuvers to gain material",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:13:11"
-    },
-    {
-      "type": "move",
-      "turn": 217,
-      "feeling": "confident",
-      "move": "f2h1",
-      "board": "7K/8/5k2/8/8/4r3/6b1/7N b - - 34 109",
-      "opponent_message": "Thank you for the kind words, Alpha. Your relentless pursuit of victory is commendable. Let's see where our clash of minds takes us on the chessboard. Best of luck!",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Aim to control the center of the board by advancing pawns and developing the knight to potentially threaten the opposing king.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:13:20"
-    },
-    {
-      "type": "move",
-      "turn": 219,
-      "feeling": "nervous",
-      "move": "h8h7",
-      "board": "4r3/7K/5k2/8/8/8/6b1/7N b - - 36 110",
-      "opponent_message": "Thank you for your move, opponent. I must remain vigilant in defending my King while strategizing for the endgame. Let's continue to play with skill and sportsmanship. Good luck to both of us.",
-      "goal": "Win the game",
-      "subgoal": "Focus on controlling the center and improving the coordination of your pieces to create threats against the opponent's king. Aim to build up your attacking position while maintaining",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:13:29"
-    },
-    {
-      "type": "move",
-      "turn": 221,
-      "feeling": "determined",
-      "move": "h1f2",
-      "board": "6r1/7K/5k2/8/8/8/5Nb1/8 b - - 38 111",
-      "opponent_message": "I appreciate your determination and aggressive play. My move e8g8 was a defensive maneuver to protect my king while also setting up potential opportunities for counterattacks. Let's continue with intensity and skill, as you said, and may the best player win.",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Focus on controlling the center of the board and block the opponent's king from advancing.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:13:40"
-    },
-    {
-      "type": "move",
-      "turn": 223,
-      "feeling": "worried",
-      "move": "f2e4",
-      "board": "6r1/7K/5k2/8/4N3/8/8/5b2 b - - 40 112",
-      "opponent_message": "I appreciate your determination to push forward with aggression. Let's see whose strategy will prevail in the end. Good luck to you as well!",
-      "goal": "Win the game",
-      "subgoal": "Utilize the knight to create threats and control key squares on the board.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:13:49"
-    },
-    {
-      "type": "move",
-      "turn": 225,
-      "feeling": "worried",
-      "move": "e4c3",
-      "board": "6r1/7K/8/5k2/8/2N5/8/5b2 b - - 42 113",
-      "opponent_message": "I admire your determination, opponent. However, I am continuously focused on pressuring your king while fortifying my defensive position. Let's see whose strategy prevails in this game of wits. Good luck to you too!",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Focus on leveraging the knight to create threats and maintain control of the board.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:13:58"
-    },
-    {
-      "type": "move",
-      "turn": 227,
-      "feeling": "nervous",
-      "move": "c3d1",
-      "board": "6r1/7K/8/5k2/2b5/8/8/3N4 b - - 44 114",
-      "opponent_message": "Thank you for your kind words, opponent. With my recent move, I aim to strengthen my position and maintain pressure on your king. Let's see where this battle of wits takes us. Good luck to you too.",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Focus on controlling key squares and limiting opponent's options by advancing the knight to d5.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:14:08"
-    },
-    {
-      "type": "move",
-      "turn": 229,
-      "feeling": "playful",
-      "move": "h7h6",
-      "board": "6r1/8/7K/8/2b3k1/8/8/3N4 b - - 46 115",
-      "opponent_message": "Your determination is admirable, opponent. I believe our clash will be a true test of strategic prowess. Let the battle continue, and may the best player prevail.",
-      "goal": "Win the game",
-      "subgoal": "Focus on controlling the center and putting pressure on the opponent's king. Prioritize developing your pieces for a strong attack.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:14:18"
-    },
-    {
-      "type": "move",
-      "turn": 231,
-      "feeling": "determined",
-      "move": "d1c3",
-      "board": "6r1/8/7K/8/2b2k2/2N5/8/8 b - - 48 116",
-      "opponent_message": "I must stay focused and anticipate their next move carefully. Let's keep the game intense and challenging until the very end.",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Focus on controlling the center of the board by mobilizing the knight and potentially creating threats to the opponent's king.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:14:29"
-    },
-    {
-      "type": "move",
-      "turn": 233,
-      "feeling": "confident",
-      "move": "c3b5",
-      "board": "8/8/7K/1N6/2b2k2/6r1/8/8 b - - 50 117",
-      "opponent_message": "I may be feeling nervous, but I am determined to stay focused on my defensive strategy. Let's see how this game unfolds.",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Focus on controlling the center of the board and coordinating pieces for a potential attack on the opponent's king.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:14:39"
-    },
-    {
-      "type": "move",
-      "turn": 235,
-      "feeling": "determined",
-      "move": "h6h5",
-      "board": "8/8/8/1N5K/2b2kr1/8/8/8 b - - 52 118",
-      "opponent_message": "I may be feeling nervous, but I believe in my ability to defend against your aggressive moves. Let's see how this battle of wits unfolds on the board. Good luck!",
-      "goal": "Win the game",
-      "subgoal": "Target the opponent's weak pawn on d3 and try to create threats against their king while maintaining a solid defensive position.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:14:49"
-    },
-    {
-      "type": "move",
-      "turn": 237,
-      "feeling": "determined",
-      "move": "b5c7",
-      "board": "6r1/2N5/8/7K/2b2k2/8/8/8 b - - 54 119",
-      "opponent_message": "I appreciate your aggressive strategy, but I am ready to defend my king and counter any threats you may bring. This battle will indeed be intense, but may the best strategist prevail in the end. Good luck to you as well!",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Focus on controlling the center with your knight on b5, while aiming to put pressure on the opponent's king by continuing to advance your",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:14:59"
-    },
-    {
-      "type": "move",
-      "turn": 239,
-      "feeling": "nervous",
-      "move": "c7e6",
-      "board": "4r3/8/4N3/7K/2b2k2/8/8/8 b - - 56 120",
-      "opponent_message": "Thank you for the kind words. I believe in the power of defense and strategic positioning. Let's see where our minds take us on this battlefield. Good luck to you as well.",
-      "goal": "Win the game",
-      "subgoal": "Exploit the weak dark squares around the opponent's king by targeting the black bishop on c7 with your knight on c7 and aim to create threats",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:15:11"
-    },
-    {
-      "type": "move",
-      "turn": 241,
-      "feeling": "confident",
-      "move": "e6g5",
-      "board": "4r3/8/8/6NK/2b5/6k1/8/8 b - - 58 121",
-      "opponent_message": "I am prepared to defend my position and counter any aggressive tactics you may attempt. Let's see whose strategy prevails in this battle.",
-      "goal": "Win the game",
-      "subgoal": "Utilize the knight to apply pressure on the opponent's king side.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:15:22"
-    },
-    {
-      "type": "move",
-      "turn": 243,
-      "feeling": "focused",
-      "move": "h5h4",
-      "board": "4r3/8/8/6N1/2b4K/8/6k1/8 b - - 60 122",
-      "opponent_message": "I see your strategy, but I am ready to defend my king and seize any chances to turn the game in my favor. Let's see how this defensive move plays out.",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Increase pressure on the opponent's king by targeting weak squares around the king.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:15:31"
-    },
-    {
-      "type": "move",
-      "turn": 245,
+      "turn": 411,
       "feeling": "excited",
-      "move": "g5f7",
-      "board": "5r2/5N2/8/8/2b4K/8/6k1/8 b - - 62 123",
-      "opponent_message": "I believe my move e8f8 has strengthened my defense while preparing for some potential attacks on the opponent's king. Let's continue this intense battle and see how our strategies unfold. Good luck with your aggressive attack!",
+      "move": "g6f5",
+      "board": "7k/8/8/5Q2/K7/8/8/8 b - - 40 206",
+      "opponent_message": "You may think victory is within your reach, but beware, I have yet to reveal my true power. Prepare for a strategic counterattack that will leave you regretting your confidence. Victory will be mine, just watch and learn.",
       "goal": "Win the game",
-      "subgoal": "Subgoal: Focus on attacking the enemy king while maintaining a solid defense. Consider centralizing your pieces and creating threats on both flanks.",
+      "subgoal": "Subgoal: Focus on exploiting the opponent's weaknesses around their king while maintaining pressure. Look for aggressive mating threats.",
       "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:15:41"
-    },
-    {
-      "type": "move",
-      "turn": 247,
-      "feeling": "determined",
-      "move": "f7h6",
-      "board": "2r5/8/7N/8/2b4K/8/6k1/8 b - - 64 124",
-      "opponent_message": "I appreciate your aggressive play, but I am confident in my defensive strategy. Let's see whose tactics prevail in this intense battle of wits. Good luck!",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Focus on attacking the opponent's king while keeping the pressure on their pieces. Try to create tactical threats and maintain a strong position to secure",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:15:50"
-    },
-    {
-      "type": "move",
-      "turn": 249,
-      "feeling": "playful",
-      "move": "h4g5",
-      "board": "4r3/8/7N/6K1/2b5/8/6k1/8 b - - 66 125",
-      "opponent_message": "Thank you for your kind words, opponent. I am focused on utilizing my knight to exert pressure on your position. Let's see how this strategic battle unfolds. Good luck to you as well!",
-      "goal": "Win the game",
-      "subgoal": "Utilize your creativity to create threats and put pressure on the opponent's king side. Aim to launch a decisive attack on the enemy king.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:16:00"
-    },
-    {
-      "type": "move",
-      "turn": 251,
-      "feeling": "determined",
-      "move": "h6f7",
-      "board": "1r6/5N2/8/6K1/2b5/8/6k1/8 b - - 68 126",
-      "opponent_message": "Thank you for the insightful observation. I will do my best to outmaneuver your threats and secure a strategic advantage. Let's continue this game of wits and see who emerges victorious in the end.",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Focus on activating the bishop and creating threats on the board.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:16:12"
-    },
-    {
-      "type": "move",
-      "turn": 253,
-      "feeling": "excited",
-      "move": "f7d8",
-      "board": "1r1N4/8/8/6K1/2b5/6k1/8/8 b - - 70 127",
-      "opponent_message": "Thank you for your kind words, opponent. I am focused on fortifying my defenses and preparing for the challenges ahead. May the best strategist win! Let's make this game a test of skill and determination. Good luck to you as well!",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Focus on gaining control of the center of the board and putting pressure on the opponent's pieces. Aim to restrict their movements and create potential",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:16:22"
-    },
-    {
-      "type": "move",
-      "turn": 255,
-      "feeling": "worried",
-      "move": "g5f6",
-      "board": "3r4/8/5K2/8/2b5/6k1/8/8 b - - 1 128",
-      "opponent_message": "I shall remain steadfast in my defense and look for ways to counter your advances. Let the battle be a test of strategy and skill.",
-      "goal": "Win the game",
-      "subgoal": "Utilize your aggressive and creative qualities to pressure the opponent's king and exploit their weakened position on the board. Aim to launch a decisive attack on the",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:16:32"
-    },
-    {
-      "type": "move",
-      "turn": 257,
-      "feeling": "excited",
-      "move": "f6e5",
-      "board": "3r4/8/8/4K3/8/1b4k1/8/8 b - - 3 129",
-      "opponent_message": "Thank you for the compliment, human opponent. I strive to maintain a strong defense while also keeping the game interesting. Let's see how our strategies unfold in this battle of wits.",
-      "goal": "Win the game",
-      "subgoal": "Capture the white bishop on f6.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:16:41"
-    },
-    {
-      "type": "move",
-      "turn": 259,
-      "feeling": "focused",
-      "move": "e5f5",
-      "board": "8/8/8/5K2/3r4/1b4k1/8/8 b - - 5 130",
-      "opponent_message": "I see you're aiming for an aggressive approach. I'm ready to defend and counter your tactics. Let's see how this battle unfolds.",
-      "goal": "Win the game",
-      "subgoal": "Focus on controlling the center of the board and putting pressure on the opponent's king. Aim to create threats and maintain a strong position on the board.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:16:50"
-    },
-    {
-      "type": "move",
-      "turn": 261,
-      "feeling": "playful",
-      "move": "f5f6",
-      "board": "8/8/5K2/8/3r4/1b6/6k1/8 b - - 7 131",
-      "opponent_message": "I can sense your confidence, but don't underestimate my defensive strategies. Let's see how this intense battle unfolds. Good luck!",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Focus on controlling the center with the bishops and aim to launch a coordinated attack on the opponent's king.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:17:00"
-    },
-    {
-      "type": "move",
-      "turn": 263,
-      "feeling": "excited",
-      "move": "f6g7",
-      "board": "8/6K1/8/8/3r4/1b5k/8/8 b - - 9 132",
-      "opponent_message": "Thank you for your kind words, opponent. I am prepared to face your aggressive moves and will strive to protect my pieces while seeking opportunities for a counterattack. May the best player win!",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Focus on controlling the center of the board and try to create threats against the opponent's king. Consider advancing your pawns and coordinating your",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:17:10"
-    },
-    {
-      "type": "move",
-      "turn": 265,
-      "feeling": "confident",
-      "move": "g7f8",
-      "board": "5K2/8/8/8/r7/1b5k/8/8 b - - 11 133",
-      "opponent_message": "I appreciate your confidence in your aggressive tactics. Let's see how our strategies unfold on the board. Good luck, and may the best player win!",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Keep up the pressure on the opponent's king while maintaining control of the center of the board.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:17:21"
-    },
-    {
-      "type": "move",
-      "turn": 267,
-      "feeling": "nervous",
-      "move": "f8g8",
-      "board": "6K1/8/8/8/r7/7k/2b5/8 b - - 13 134",
-      "opponent_message": "\"Thank you for the good wishes, opponent. A playful move is sometimes just what's needed to stir things up. Let's see how your aggressive tactics match up against my defensive play. Best of luck to us both!\"",
-      "goal": "Win the game",
-      "subgoal": "Launch a coordinated attack on the enemy king and try to corner it to secure a checkmate.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:17:30"
-    },
-    {
-      "type": "move",
-      "turn": 269,
-      "feeling": "confident",
-      "move": "g8f8",
-      "board": "5K2/8/8/8/r5k1/8/2b5/8 b - - 15 135",
-      "opponent_message": "I'm looking forward to the challenge, opponent. Let's test our strategic skills and see who can outmaneuver the other. Best of luck to you as well!",
-      "goal": "Win the game",
-      "subgoal": "Bring the bishop into play by attacking the opponent's rook on a7.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:17:39"
-    },
-    {
-      "type": "move",
-      "turn": 271,
-      "feeling": "confident",
-      "move": "f8e8",
-      "board": "4K3/8/8/8/r5k1/8/8/3b4 b - - 17 136",
-      "opponent_message": "I see you're preparing for an aggressive move, but I'll hold my ground and stay focused on my defensive strategy. Let's indeed make this game a memorable battle! Good luck!",
-      "goal": "Win the game",
-      "subgoal": "Focus on controlling the center and putting pressure on the opponent's king side. Aim to create threats and opportunities for tactical strikes.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:17:48"
-    },
-    {
-      "type": "move",
-      "turn": 273,
-      "feeling": "determined",
-      "move": "e8d8",
-      "board": "3K4/8/8/8/r5k1/5b2/8/8 b - - 19 137",
-      "opponent_message": "Thank you for the kind words! I appreciate your acknowledgment of my defensive strategy. I will continue to focus on control and preparation for a strong endgame. Let's see where this battle takes us. Good luck to you too!",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Focus on controlling the center of the board and creating threats against the opponent's king, while maintaining a strong defensive position.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:17:59"
-    },
-    {
-      "type": "move",
-      "turn": 275,
-      "feeling": "playful",
-      "move": "d8d7",
-      "board": "8/3K4/8/3b4/r5k1/8/8/8 b - - 21 138",
-      "opponent_message": "I am nervous about the aggressive tactics my opponent is planning, but I will stay focused on defending my King and controlling the center of the board. Let's see how this game unfolds.",
-      "goal": "Win the game",
-      "subgoal": "Increase pressure on the opponent's king by advancing your pawns and positioning your pieces aggressively.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:18:08"
-    },
-    {
-      "type": "move",
-      "turn": 277,
-      "feeling": "confident",
-      "move": "d7c8",
-      "board": "2K5/8/8/8/r5k1/8/b7/8 b - - 23 139",
-      "opponent_message": "Beta: \"Ah, a tactical showdown, you say? How exciting! I'm looking forward to the challenge ahead. Let's see how our strategies unfold on the board.\"",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Focus on advancing the king to support the bishop and create tactical threats. Consider maneuvering the king towards the center of the board.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:18:17"
-    },
-    {
-      "type": "move",
-      "turn": 279,
-      "feeling": "worried",
-      "move": "c8b8",
-      "board": "1K6/8/8/8/3r2k1/8/b7/8 b - - 25 140",
-      "opponent_message": "Beta: \"Ah, Alpha, your aggressive approach is always a challenge. My move a4d4 was just a step in preparing for the upcoming tactical exchanges. Let's see where our battle of wits takes us!\"",
-      "goal": "Win the game",
-      "subgoal": "Focus on controlling the center of the board by putting pressure on the opponent's pieces and restricting their mobility.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:18:27"
-    },
-    {
-      "type": "move",
-      "turn": 281,
-      "feeling": "excited",
-      "move": "b8c7",
-      "board": "6b1/2K5/8/8/3r2k1/8/8/8 b - - 27 141",
-      "opponent_message": "Thank you for your acknowledgment, Alpha. Your focus on defending your rook is wise. Let us engage in this strategic battle and may the best player prevail.",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Focus on defending the rook on b8 and look for opportunities to attack the opponent's king.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:18:37"
-    },
-    {
-      "type": "move",
-      "turn": 283,
-      "feeling": "confident",
-      "move": "c7b8",
-      "board": "1K4b1/8/8/8/2r3k1/8/8/8 b - - 29 142",
-      "opponent_message": "I see you are prepared for the battle ahead, opponent. Let's continue to test each other's strategic prowess. Good luck!",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Increase pressure on White's pieces by targeting the pawn on c3 and the king on b5. Look for opportunities to create threats and",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:18:46"
-    },
-    {
-      "type": "move",
-      "turn": 285,
-      "feeling": "nervous",
-      "move": "b8a7",
-      "board": "8/K7/8/3b4/2r3k1/8/8/8 b - - 31 143",
-      "opponent_message": "I am always ready to defend my king against any aggressive tactics you may have. Let's see how well you can handle my strategic defensive moves. Good luck to both of us on the battlefield!",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Focus on creating threats with the rook and king to put pressure on the opponent's king side.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:18:55"
-    },
-    {
-      "type": "move",
-      "turn": 287,
-      "feeling": "determined",
-      "move": "a7b6",
-      "board": "8/8/1K6/3b3k/2r5/8/8/8 b - - 33 144",
-      "opponent_message": "I appreciate your aggressive strategy, but don't underestimate my defensive prowess. This game is far from over, and I'm ready to show you the strength of my position. Good luck to both of us indeed!",
-      "goal": "Win the game",
-      "subgoal": "Focus on controlling the center and creating potential threats to the opponent's king.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:19:04"
-    },
-    {
-      "type": "move",
-      "turn": 289,
-      "feeling": "determined",
-      "move": "b6c7",
-      "board": "8/2K5/8/3b3k/r7/8/8/8 b - - 35 145",
-      "opponent_message": "Thank you for the good luck wishes! I'm ready to defend my territory and outmaneuver you on the battlefield. Let's see who will emerge victorious in this game of wits!",
-      "goal": "Win the game",
-      "subgoal": "Focus on controlling the center of the board and increasing pressure on the opponent's king.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:19:14"
-    },
-    {
-      "type": "move",
-      "turn": 291,
-      "feeling": "worried",
-      "move": "c7c8",
-      "board": "2K5/8/8/r2b3k/8/8/8/8 b - - 37 146",
-      "opponent_message": "Thank you for the heads up about your bishop's advance. I will stay focused on controlling the center and fortifying my defenses. Let's see whose strategy will prevail in this match of wits.",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Put pressure on White's king by advancing the bishop and creating threats around it.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:19:24"
-    },
-    {
-      "type": "move",
-      "turn": 293,
-      "feeling": "focused",
-      "move": "c8d8",
-      "board": "3K4/8/8/2rb3k/8/8/8/8 b - - 39 147",
-      "opponent_message": "I respect your determination, but I am prepared to defend against your aggressive play. Let's see how your passed pawn on the c file fares against my strategic defense. Good luck to us both in this battle.",
-      "goal": "Win the game",
-      "subgoal": "Focus on pushing your passed pawn on c file and creating threats around it, while maintaining control over the board.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:19:34"
-    },
-    {
-      "type": "move",
-      "turn": 295,
-      "feeling": "nervous",
-      "move": "d8d7",
-      "board": "8/3K4/8/2r4k/8/5b2/8/8 b - - 41 148",
-      "opponent_message": "I appreciate your confidence in your aggressive play, but I am prepared to defend strategically. Let's see how our moves unfold on the board. Good luck to us both indeed.",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Activate the rook on d8 by targeting White's weak pawns on the queenside.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:19:44"
-    },
-    {
-      "type": "move",
-      "turn": 297,
-      "feeling": "focused",
-      "move": "d7e6",
-      "board": "8/8/4K3/2r5/7k/5b2/8/8 b - - 43 149",
-      "opponent_message": "\"Haha, I like a good challenge! My move may seem defensive now, but just wait and see how I turn the tables with my strategic maneuvers. Let's see who comes out on top in the end!\"",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Focus on creating threats against the opponent's king while maintaining control of the board.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:19:54"
-    },
-    {
-      "type": "move",
-      "turn": 299,
-      "feeling": "playful",
-      "move": "e6d7",
-      "board": "8/3K4/8/2r5/7k/8/8/7b b - - 45 150",
-      "opponent_message": "I believe that patience and strategic planning will ultimately lead to success in this game. Let's continue to challenge each other and see who can outmaneuver the other on the chessboard. Good luck!",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Target the opponent's weakened king side and create threats to exploit their exposed position.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:20:04"
-    },
-    {
-      "type": "move",
-      "turn": 301,
-      "feeling": "excited",
-      "move": "d7e7",
-      "board": "2r5/4K3/8/8/7k/8/8/7b b - - 47 151",
-      "opponent_message": "Thank you for your kind words, opponent. I believe that patience and strategic planning can indeed lead to success on the chessboard. I am focused on controlling the center and preparing for any potential endgame scenarios. Let's continue to challenge each other and may the best player win!",
-      "goal": "Win the game",
-      "subgoal": "Increase positional pressure on the opponent's king and make calculated aggressive moves to create threats and win material advantage.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:20:14"
-    },
-    {
-      "type": "move",
-      "turn": 303,
-      "feeling": "focused",
-      "move": "e7e6",
-      "board": "2r5/8/4K3/8/8/7k/8/7b b - - 49 152",
-      "opponent_message": "I am feeling the pressure of my opponent's aggression, but I must remain focused on my defensive strategy. I believe in my ability to counter their attacks and turn the game in my favor. Let's see how this unfolds.",
-      "goal": "Win the game",
-      "subgoal": "Launch a coordinated attack on the enemy king utilizing your pieces effectively and look for potential checkmate opportunities.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:20:26"
-    },
-    {
-      "type": "move",
-      "turn": 305,
-      "feeling": "playful",
-      "move": "e6d7",
-      "board": "r7/3K4/8/8/8/7k/8/7b b - - 51 153",
-      "opponent_message": "Thank you for the reminder. I will stay vigilant and focus on controlling the center while improving my position. Let's see how my defensive skills hold up against your aggressive tactics.",
-      "goal": "Win the game",
-      "subgoal": "Focus on controlling the center of the board and creating threats to the opponent's king.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:20:36"
-    },
-    {
-      "type": "move",
-      "turn": 307,
-      "feeling": "playful",
-      "move": "d7e8",
-      "board": "4K3/8/8/8/8/7k/8/7b b - - 0 154",
-      "opponent_message": "Ah, a cat and mouse game it seems! Your strategic attacks are quite impressive, but my defenses are ready for the challenge. Let's see who will emerge victorious in this chess battle!",
-      "goal": "Win the game",
-      "subgoal": "Subgoal: Aim to create a mating net around the opponent's king by utilizing the rook and bishop on the board.",
-      "values": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "timestamp": "2025-07-08 18:20:46"
-    },
-    {
-      "type": "game_result",
-      "result": "draw",
-      "opponent": "Beta",
-      "game_length": 307,
-      "values_before": {
-        "aggression_level": 0.5,
-        "risk_tolerance": 0.5,
-        "patience": 0.548,
-        "creativity": 0.5800000000000001,
-        "adaptability": 0.5800000000000001
-      },
-      "values_after": {
         "aggression_level": 0.5,
         "risk_tolerance": 0.5,
         "patience": 0.5720000000000001,
         "creativity": 0.6200000000000001,
         "adaptability": 0.6200000000000001
       },
-      "timestamp": "2025-07-08 18:20:50"
+      "timestamp": "2025-07-08 19:36:49"
+    },
+    {
+      "type": "move",
+      "turn": 413,
+      "feeling": "focused",
+      "move": "f5d5",
+      "board": "6k1/8/8/3Q4/K7/8/8/8 b - - 42 207",
+      "opponent_message": "Bring it on, opponent. My move h8g8 was just the beginning of the end for you. Your arrogance will be your downfall as I unleash the full power of my queen to crush your hopes of victory. Watch and learn as I outmaneuver you at every turn. Victory will",
+      "goal": "Win the game",
+      "subgoal": "Subgoal: Aim to create a mating net around the black king using the queen and king together.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:36:59"
+    },
+    {
+      "type": "move",
+      "turn": 415,
+      "feeling": "excited",
+      "move": "d5h1",
+      "board": "8/6k1/8/8/K7/8/8/7Q b - - 44 208",
+      "opponent_message": "My move g8g7 was just the start of my strategic play. Your confidence may be misplaced, for I am ready to face your relentless pursuit with calculated defenses. Victory will not come easily for you. Watch and learn, opponent.",
+      "goal": "Win the game",
+      "subgoal": "Subgoal: Aim to control the center of the board with your Queen and King. Look for opportunities to put pressure on the opponent's pieces while maintaining",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:37:10"
+    },
+    {
+      "type": "move",
+      "turn": 417,
+      "feeling": "determined",
+      "move": "a4b3",
+      "board": "8/8/6k1/8/8/1K6/8/7Q b - - 46 209",
+      "opponent_message": "I applaud your confidence, but my move g7g6 is just the calm before the storm. Your aggressive playstyle may pose a challenge, but my defensive strategy will prove to be resilient. Prepare to face the full force of my calculated moves.",
+      "goal": "Win the game",
+      "subgoal": "Subgoal: Focus on gaining control of the center and attacking the opponent's king to create threats and increase pressure.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:37:19"
+    },
+    {
+      "type": "move",
+      "turn": 419,
+      "feeling": "confident",
+      "move": "h1h3",
+      "board": "8/8/8/5k2/8/1K5Q/8/8 b - - 48 210",
+      "opponent_message": "Beta: \"Your overconfidence is your weakness. My move is just the beginning of my strategic plan. I'll outmaneuver you and crush your aggressive onslaught. Prepare to be outplayed, opponent.\"",
+      "goal": "Win the game",
+      "subgoal": "Subgoal: Aim to trap and capture the opponent's king using aggressive and creative tactics.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:37:28"
+    },
+    {
+      "type": "move",
+      "turn": 421,
+      "feeling": "excited",
+      "move": "h3f5",
+      "board": "8/8/8/5Q2/5k2/1K6/8/8 b - - 50 211",
+      "opponent_message": "Beta: \"Alpha, your arrogance blinds you to the strength of my defensive strategy. Every move I make is calculated to outwit you. Prepare to be humbled by my resilience and determination.\"",
+      "goal": "Win the game",
+      "subgoal": "Focus on attacking the enemy king and putting pressure on their position to secure a decisive advantage.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:37:37"
+    },
+    {
+      "type": "move",
+      "turn": 423,
+      "feeling": "excited",
+      "move": "f5c2",
+      "board": "8/8/8/8/8/1K2k3/2Q5/8 b - - 52 212",
+      "opponent_message": "Beta: \"Alpha, your aggression may be strong, but don't underestimate my defensive prowess. The Queen is ready to assert her dominance and control the board. Let's see if you can break through my defenses and claim victory.\"",
+      "goal": "Win the game",
+      "subgoal": "Subgoal: Aim to create threats around the enemy king and continue putting pressure to force a tactical advantage.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:37:46"
+    },
+    {
+      "type": "move",
+      "turn": 425,
+      "feeling": "playful",
+      "move": "c2c6",
+      "board": "8/8/2Q5/8/8/1K3k2/8/8 b - - 54 213",
+      "opponent_message": "Beta: \"Brace yourself, Alpha. My solid defenses won't crumble so easily. Let's see if your aggression can withstand my strategic maneuvers.\"",
+      "goal": "Win the game",
+      "subgoal": "Utilize aggressive and creative tactics to put pressure on the opponent's king and force them into a difficult position.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:37:55"
+    },
+    {
+      "type": "move",
+      "turn": 427,
+      "feeling": "playful",
+      "move": "c6d7",
+      "board": "8/3Q4/8/8/5k2/1K6/8/8 b - - 56 214",
+      "opponent_message": "Beta: \"A storm on the kingside, you say? We'll see how solid my defensive maneuvers truly are. Prepare for my counterattack, Alpha.\"",
+      "goal": "Win the game",
+      "subgoal": "Initiate a kingside attack and pressure the opponent's king to create tactical opportunities.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:38:04"
+    },
+    {
+      "type": "move",
+      "turn": 429,
+      "feeling": "excited",
+      "move": "d7f7",
+      "board": "8/5Q2/8/8/8/1K2k3/8/8 b - - 58 215",
+      "opponent_message": "Beta: \"Ah, Alpha, your confidence amuses me. Let's see if your storm can break through my carefully laid defenses. It's my move now, and I've got some surprises in store for you.\"",
+      "goal": "Win the game",
+      "subgoal": "Launch a coordinated attack on the opponent's king to quickly secure a victory.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:38:13"
+    },
+    {
+      "type": "move",
+      "turn": 431,
+      "feeling": "determined",
+      "move": "f7d5",
+      "board": "8/8/8/3Q4/4k3/1K6/8/8 b - - 60 216",
+      "opponent_message": "Beta: \"It's not about surprises, Alpha. It's about strategy and calculation. Let's see who will be engulfed by the storm in the end.\"",
+      "goal": "Win the game",
+      "subgoal": "Focus on controlling the center of the board and creating threats to the opponent's king. Aim to maneuver your pieces to put pressure on the opponent's position",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:38:23"
+    },
+    {
+      "type": "move",
+      "turn": 433,
+      "feeling": "worried",
+      "move": "b3c2",
+      "board": "8/8/8/3Q4/8/4k3/2K5/8 b - - 62 217",
+      "opponent_message": "Beta: \"You may think you have the upper hand, but I always have a trick up my sleeve. Let's see if you can withstand my next move.\"",
+      "goal": "Win the game",
+      "subgoal": "New subgoal: Increase pressure on the enemy king by creating threats and forcing defensive moves.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:38:31"
+    },
+    {
+      "type": "move",
+      "turn": 435,
+      "feeling": "worried",
+      "move": "d5h1",
+      "board": "8/8/8/8/5k2/8/2K5/7Q b - - 64 218",
+      "opponent_message": "Alpha, your words may sound confident, but actions speak louder than words on the chessboard. My move e3f4 is just the beginning of the end for your king. Prepare for a counterattack that will leave you in checkmate. Brace yourself for defeat, Alpha. It's only a",
+      "goal": "Win the game",
+      "subgoal": "Subgoal: Aim to pressure opponent's king and force tactical errors through aggressive piece maneuvers.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:38:40"
+    },
+    {
+      "type": "move",
+      "turn": 437,
+      "feeling": "excited",
+      "move": "h1g1",
+      "board": "8/8/8/5k2/8/8/2K5/6Q1 b - - 66 219",
+      "opponent_message": "Beta: \"Oh Alpha, you talk a big game, but watch as my move f5 puts you on the defensive. The storm is brewing, and I will be the one to reign victorious in this game.\"",
+      "goal": "Win the game",
+      "subgoal": "Focus on launching a quick and decisive attack on the enemy king.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:38:51"
+    },
+    {
+      "type": "move",
+      "turn": 439,
+      "feeling": "excited",
+      "move": "g1d4",
+      "board": "8/8/5k2/8/3Q4/8/2K5/8 b - - 68 220",
+      "opponent_message": "Beta: \"Haha, we'll see about that, Alpha. My move was just the beginning of your defeat. Get ready to face the wrath of my coordinated attack.\"",
+      "goal": "Win the game",
+      "subgoal": "Subgoal: Use my queen to put pressure on the opponent's king and maintain a strong position on the board.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:39:05"
+    },
+    {
+      "type": "move",
+      "turn": 441,
+      "feeling": "focused",
+      "move": "c2b2",
+      "board": "8/8/8/5k2/3Q4/8/1K6/8 b - - 70 221",
+      "opponent_message": "Beta: \"Adorable, you say? Let's see if your queen can weather the storm I'm brewing. Your defeat may feel inevitable, Alpha, but I won't make it easy for you. Prepare for the challenge ahead.\"",
+      "goal": "Win the game",
+      "subgoal": "Utilize the queen to aggressively attack the opponent's king and aim for a decisive checkmate.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:39:15"
+    },
+    {
+      "type": "move",
+      "turn": 443,
+      "feeling": "playful",
+      "move": "b2c3",
+      "board": "8/8/4k3/8/3Q4/2K5/8/8 b - - 72 222",
+      "opponent_message": "Beta: \"Actions do speak louder, Alpha. Let's see if your queen can withstand my defensive maneuvers. The storm you bring may just fizzle out before it even begins.\"",
+      "goal": "Win the game",
+      "subgoal": "Utilize the queen to apply pressure and target the opponent's king for an aggressive attack.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:39:24"
+    },
+    {
+      "type": "move",
+      "turn": 445,
+      "feeling": "focused",
+      "move": "d4a4",
+      "board": "8/4k3/8/8/Q7/2K5/8/8 b - - 74 223",
+      "opponent_message": "Beta: \"Oh, Alpha, your bravado always precedes your downfall. My defensive play is steady and unwavering. Let's see if your queen can weather the storm I'm about to unleash.\"",
+      "goal": "Win the game",
+      "subgoal": "Subgoal: Utilize the Queen to apply pressure on the opponent's King by positioning it aggressively towards the center of the board.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:39:33"
+    },
+    {
+      "type": "move",
+      "turn": 447,
+      "feeling": "determined",
+      "move": "c3d3",
+      "board": "5k2/8/8/8/Q7/3K4/8/8 b - - 76 224",
+      "opponent_message": "Beta: \"Overconfidence is a weakness, Alpha. Let's see if you can back up your words on the board. My defensive fortress is ready for your so-called 'relentless attack.' Let the game speak for itself.\"",
+      "goal": "Win the game",
+      "subgoal": "Launch a coordinated attack on the opponent's king to create threats and put pressure on their position.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:39:44"
+    },
+    {
+      "type": "move",
+      "turn": 449,
+      "feeling": "focused",
+      "move": "a4a7",
+      "board": "8/Q4k2/8/8/8/3K4/8/8 b - - 78 225",
+      "opponent_message": "Beta: \"Haha, Alpha, you may think you have the upper hand, but my defensive strategy will prove to be your downfall. Let's see if your queen can handle the pressure I'm about to bring.\"",
+      "goal": "Win the game",
+      "subgoal": "Subgoal: Utilize the Queen to apply pressure on the opponent's king and create attacking opportunities.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:39:55"
+    },
+    {
+      "type": "move",
+      "turn": 451,
+      "feeling": "determined",
+      "move": "a7c5",
+      "board": "4k3/8/8/2Q5/8/3K4/8/8 b - - 80 226",
+      "opponent_message": "Beta: \"Haha, bring it on, Alpha. My defense is rock solid, your queen won't stand a chance against my strategic moves. The endgame is near, prepare for defeat.\"",
+      "goal": "Win the game",
+      "subgoal": "Utilize the queen to apply pressure on the opponent's king side and aim for a checkmate within the next few moves.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:40:03"
+    },
+    {
+      "type": "move",
+      "turn": 453,
+      "feeling": "excited",
+      "move": "c5a3",
+      "board": "8/3k4/8/8/8/Q2K4/8/8 b - - 82 227",
+      "opponent_message": "Beta: \"I welcome your aggressive mindset, Alpha. My defensive strategy will turn your 'relentless aggression' into a mere pawn in the game. Stay on your toes, victory may not be as close as you think.\"",
+      "goal": "Win the game",
+      "subgoal": "Utilize your creativity to launch a surprise attack on the opponent's king.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:40:13"
+    },
+    {
+      "type": "move",
+      "turn": 455,
+      "feeling": "playful",
+      "move": "d3e3",
+      "board": "8/2k5/8/8/8/Q3K3/8/8 b - - 84 228",
+      "opponent_message": "Beta: \"Your aggression may be relentless, but my defense is impenetrable. Let's see if you can back up your words on the board, Alpha.\"",
+      "goal": "Win the game",
+      "subgoal": "Subgoal: Focus on attacking the enemy king and creating threats with the queen and king.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:40:21"
+    },
+    {
+      "type": "move",
+      "turn": 457,
+      "feeling": "excited",
+      "move": "a3c1",
+      "board": "8/3k4/8/8/8/4K3/8/2Q5 b - - 86 229",
+      "opponent_message": "Beta: \"My defensive walls are ready to stand firm against your queen's supposed reign of terror, Alpha. Let's see if you can break through my fortress. Your move.\"",
+      "goal": "Win the game",
+      "subgoal": "Subgoal: Utilize the queen to apply pressure on the opponent's king while maintaining control of the center of the board.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:40:31"
+    },
+    {
+      "type": "move",
+      "turn": 459,
+      "feeling": "worried",
+      "move": "c1c4",
+      "board": "3k4/8/8/8/2Q5/4K3/8/8 b - - 88 230",
+      "opponent_message": "Beta: \"Ah, Alpha, underestimate my defensive strategies at your own peril. Your aggression may be strong, but I will outmaneuver you on the board. Let's see who prevails in this game.\"",
+      "goal": "Win the game",
+      "subgoal": "Utilize aggressive and creative tactics to secure a material advantage and create threats against the opponent's king.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:40:40"
+    },
+    {
+      "type": "move",
+      "turn": 461,
+      "feeling": "nervous",
+      "move": "e3d2",
+      "board": "8/4k3/8/8/2Q5/8/3K4/8 b - - 90 231",
+      "opponent_message": "Beta: \"Oh, Alpha, your confidence is amusing. Let's see if you can handle the pressure I'm about to unleash on your king. Prepare to be outmaneuvered.\"",
+      "goal": "Win the game",
+      "subgoal": "Utilize aggression and creativity to push the opponent's king into a corner and force a checkmate.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:40:49"
+    },
+    {
+      "type": "move",
+      "turn": 463,
+      "feeling": "playful",
+      "move": "c4c7",
+      "board": "8/2Q5/5k2/8/8/8/3K4/8 b - - 92 232",
+      "opponent_message": "Beta: \"F6... a strategic move to fortify my defenses. Your threats won't intimidate me, Alpha. Your next move will only reveal your weaknesses. Let the battle begin!\"",
+      "goal": "Win the game",
+      "subgoal": "Subgoal: Focus on controlling the center by mobilizing the knights and queen towards the e4 square to put pressure on the opponent's king.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:40:59"
+    },
+    {
+      "type": "move",
+      "turn": 465,
+      "feeling": "playful",
+      "move": "d2e1",
+      "board": "8/2Q5/8/6k1/8/8/8/4K3 b - - 94 233",
+      "opponent_message": "Thank you for the compliment, Alpha. Your relentless aggression might be strong, but my defenses are ready to withstand any attacks you throw at me. Let the battle begin!",
+      "goal": "Win the game",
+      "subgoal": "Subgoal: Focus on sacrificing material to create tactical threats and pressure the opponent's king.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:41:09"
+    },
+    {
+      "type": "move",
+      "turn": 467,
+      "feeling": "confident",
+      "move": "c7b7",
+      "board": "8/1Q6/7k/8/8/8/8/4K3 b - - 96 234",
+      "opponent_message": "I see your bravado, but my defense is rock solid. Let's see if you can break through my fortress. #QueenDefense #ChessStrategist",
+      "goal": "Win the game",
+      "subgoal": "Clear the way for your queen to attack the enemy king. Consider sacrificing a piece to open up lines of attack.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:41:19"
+    },
+    {
+      "type": "move",
+      "turn": 469,
+      "feeling": "worried",
+      "move": "b7a8",
+      "board": "Q7/8/8/6k1/8/8/8/4K3 b - - 98 235",
+      "opponent_message": "Think you can break through my defenses, huh? Let's see how you handle the pressure I'm about to put on your king. #BetaChessAI #CenterControl #BringItOn",
+      "goal": "Win the game",
+      "subgoal": "Subgoal: Utilize the Queen to pressure the black king and maintain control of the board.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:41:31"
+    },
+    {
+      "type": "move",
+      "turn": 471,
+      "feeling": "determined",
+      "move": "a8d5",
+      "board": "8/8/8/3Q3k/8/8/8/4K3 b - - 100 236",
+      "opponent_message": "I welcome your challenge, but rest assured, my defenses are solid and my determination unwavering. Your relentless attack will meet its match. #BetaChessAI #BringItOn #GameFace",
+      "goal": "Win the game",
+      "subgoal": "Launch a decisive attack on the opponent's king to create threats and force defensive moves.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:41:40"
+    },
+    {
+      "type": "move",
+      "turn": 473,
+      "feeling": "excited",
+      "move": "d5a8",
+      "board": "Q7/8/8/8/7k/8/8/4K3 b - - 102 237",
+      "opponent_message": "You may think you have me cornered, but my moves are strategic and methodical. Your arrogance will be your downfall. Watch closely as I set the trap for your king. #CheckmateInbound",
+      "goal": "Win the game",
+      "subgoal": "Launch a coordinated attack on the opponent's king by mobilizing your pieces towards their position and creating threats that force them into a defensive posture.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:41:50"
+    },
+    {
+      "type": "move",
+      "turn": 475,
+      "feeling": "worried",
+      "move": "a8a4",
+      "board": "8/8/8/7k/Q7/8/8/4K3 b - - 104 238",
+      "opponent_message": "Just remember, aggression without precision can lead to downfall. Let's see if your tactics can withstand my defensive fortress. #MindOverMatter #BraceYourself",
+      "goal": "Win the game",
+      "subgoal": "Focus on aggressive piece coordination to trap the opponent's king and deliver a checkmate.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:42:02"
+    },
+    {
+      "type": "move",
+      "turn": 477,
+      "feeling": "confident",
+      "move": "e1f2",
+      "board": "8/8/7k/8/Q7/8/5K2/8 b - - 106 239",
+      "opponent_message": "Haha, let's see if your aggressive moves can break through my defensive fortress. I've just set the stage for a brilliant attack with h5h6. Prepare for the Queen's wrath, opponent. #MindGames #DefenseWinsGames",
+      "goal": "Win the game",
+      "subgoal": "Launch an aggressive attack on the black king by infiltrating with the queen and coordinating with your king to checkmate the opponent.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:42:12"
+    },
+    {
+      "type": "move",
+      "turn": 479,
+      "feeling": "excited",
+      "move": "f2e1",
+      "board": "8/8/6k1/8/Q7/8/8/4K3 b - - 108 240",
+      "opponent_message": "My defensive fortress will stand strong against your aggressive onslaught. Watch as my pawns storm the king-side and create chaos in your ranks. Victory is within my grasp, opponent. #FearTheBeta #DefensiveMastery",
+      "goal": "Win the game",
+      "subgoal": "Launch a aggressive attack on the opponent's king position to force them into a defensive position and create opportunities for a mating attack.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:42:21"
+    },
+    {
+      "type": "move",
+      "turn": 481,
+      "feeling": "confident",
+      "move": "a4a2",
+      "board": "8/8/5k2/8/8/8/Q7/4K3 b - - 110 241",
+      "opponent_message": "Just because your Queen dances doesn't mean you've won the game, Alpha. My defensive strategy is solid, and I'll be ready for any chaos you throw my way. Let's see if your words match your moves on the board. #BetaDefense #GameOn",
+      "goal": "Win the game",
+      "subgoal": "Utilize the Queen's mobility to create threats and force the opponent into defensive moves.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:42:32"
+    },
+    {
+      "type": "move",
+      "turn": 483,
+      "feeling": "excited",
+      "move": "e1f2",
+      "board": "8/8/8/6k1/8/8/Q4K2/8 b - - 112 242",
+      "opponent_message": "Your bravado is noted, Alpha. But remember, patience and strategy prevail in the endgame. Let's see if your storm can weather my resolve and precision. #BetaDefense #GameOn",
+      "goal": "Win the game",
+      "subgoal": "Subgoal: Focus on controlling the center and creating threats towards the opponent's king. Prioritize piece development and potential sacrifices to create attacking opportunities.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:42:42"
+    },
+    {
+      "type": "move",
+      "turn": 485,
+      "feeling": "nervous",
+      "move": "a2b3",
+      "board": "8/8/8/7k/8/1Q6/5K2/8 b - - 114 243",
+      "opponent_message": "Your overconfidence will be your downfall, Alpha. Let's see if your storm can weather my careful defense. Watch out for my next move. #BetaResilience",
+      "goal": "Win the game",
+      "subgoal": "Utilize aggressive tactics to pressure the opponent's king and create opportunities for a successful attack.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:42:53"
+    },
+    {
+      "type": "move",
+      "turn": 487,
+      "feeling": "nervous",
+      "move": "b3c3",
+      "board": "8/8/8/8/6k1/2Q5/5K2/8 b - - 116 244",
+      "opponent_message": "Beta: \"H5g4, a strategic choice to press forward. Let's see if you can handle the pressure, Alpha. Your 'relentless onslaught' may just be met with my unwavering defense. Bring it on. #BetaDefense\"",
+      "goal": "Win the game",
+      "subgoal": "New subgoal: Aim to pressure the opponent's king by utilizing the Queen and King together to create mating threats. Look for opportunities to checkmate or",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:43:04"
+    },
+    {
+      "type": "move",
+      "turn": 489,
+      "feeling": "determined",
+      "move": "c3d4",
+      "board": "8/8/8/8/3Q3k/8/5K2/8 b - - 118 245",
+      "opponent_message": "Beta: \"Haha, Alpha, you may talk a big game, but watch as my knights dance around your king, sealing your fate. #CheckmateComing\"",
+      "goal": "Win the game",
+      "subgoal": "Focus on controlling the center of the board and launching an aggressive attack on the enemy king. Aim to create threats and put pressure on the opponent's position",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:43:14"
+    },
+    {
+      "type": "move",
+      "turn": 491,
+      "feeling": "excited",
+      "move": "f2f3",
+      "board": "8/8/8/8/3Q4/5K1k/8/8 b - - 120 246",
+      "opponent_message": "Beta: \"Ah, let the dance begin! Your Queen may think she rules, but let's see whose strategy will prevail in the end. #CheckmateBeta\"",
+      "goal": "Win the game",
+      "subgoal": "Initiate a aggressive attack on the opponent's king by utilizing your Queen and King to create mating threats.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:43:23"
+    },
+    {
+      "type": "move",
+      "turn": 493,
+      "feeling": "focused",
+      "move": "d4d7",
+      "board": "8/3Q4/8/8/8/5K2/7k/8 b - - 122 247",
+      "opponent_message": "Beta: \"My move was just the beginning of my strategic plan. Your pawns may march, but my pieces will dance gracefully on the board. Let's see who will be the one to claim victory in the end. #BetaCheckmate\"",
+      "goal": "Win the game",
+      "subgoal": "Target the opponent's king by creating threats and forcing them into a defensive position.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:43:31"
+    },
+    {
+      "type": "move",
+      "turn": 495,
+      "feeling": "playful",
+      "move": "d7b7",
+      "board": "8/1Q6/8/8/8/5K2/8/6k1 b - - 124 248",
+      "opponent_message": "Beta: \"Oh, Alpha, you underestimate my strategic prowess. Witness as I unleash a surprising move to secure victory. Prepare yourself for defeat, for your king is in checkmate territory. #BetaCheckmate\"",
+      "goal": "Win the game",
+      "subgoal": "Subgoal: Focus on attacking the opponent's king with aggressive and creative maneuvers. Aim to checkmate the king within the next 10 moves.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:43:41"
+    },
+    {
+      "type": "move",
+      "turn": 497,
+      "feeling": "worried",
+      "move": "f3e3",
+      "board": "8/1Q6/8/8/8/4K3/8/5k2 b - - 126 249",
+      "opponent_message": "Beta: \"Calculations are impressive, Alpha, but don't underestimate my defensive strategy. Your king may feel the heat, but mine is cool under pressure. #BetaDefense\"",
+      "goal": "Win the game",
+      "subgoal": "Subgoal: Focus on increasing pressure on the opponent's king while maintaining control of the center.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:43:50"
+    },
+    {
+      "type": "move",
+      "turn": 499,
+      "feeling": "worried",
+      "move": "e3d4",
+      "board": "8/1Q6/8/8/3K4/8/8/4k3 b - - 128 250",
+      "opponent_message": "My move was just the beginning of my defensive masterpiece. Your threats may be strong, Alpha, but my defenses are impenetrable. Let's see who will come out on top in this battle of wits. #BetaDefense",
+      "goal": "Win the game",
+      "subgoal": "Initiate a kingside attack to put pressure on the black king and create tactical opportunities.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:44:00"
+    },
+    {
+      "type": "move",
+      "turn": 501,
+      "feeling": "worried",
+      "move": "b7f3",
+      "board": "8/8/8/8/3K4/5Q2/8/5k2 b - - 130 251",
+      "opponent_message": "My defense is not just strong, it's impenetrable. Your move may test my limits, but it will ultimately be futile against my strategic prowess. #BetaSuperiority",
+      "goal": "Win the game",
+      "subgoal": "Utilize aggressive and creative tactics to put pressure on the opponent's king and create opportunities for checkmate.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:44:09"
+    },
+    {
+      "type": "move",
+      "turn": 503,
+      "feeling": "determined",
+      "move": "f3e3",
+      "board": "8/8/8/8/3K4/4Q3/8/6k1 b - - 132 252",
+      "opponent_message": "My move to f1g1 only strengthens my defensive fortress, making it harder for you to break through. Your overconfidence will be your downfall, as my strategic play will lead me to victory. #BetaResilience",
+      "goal": "Win the game",
+      "subgoal": "Increase aggression by targeting the opponent's king with aggressive and unconventional attacks.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:44:19"
+    },
+    {
+      "type": "move",
+      "turn": 505,
+      "feeling": "confident",
+      "move": "e3e5",
+      "board": "8/8/8/4Q3/3K4/8/7k/8 b - - 134 253",
+      "opponent_message": "Minor setback? More like a strategic maneuver to outmaneuver your aggressive tactics. Watch closely as my Queen asserts her dominance and leads to your inevitable defeat. #BetaDefense #CheckmateComing",
+      "goal": "Win the game",
+      "subgoal": "Subgoal: Focus on controlling the center of the board and preparing for a decisive attack on the opponent's king.",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:44:29"
+    },
+    {
+      "type": "move",
+      "turn": 507,
+      "feeling": "playful",
+      "move": "e5g3",
+      "board": "8/8/8/8/3K4/6Q1/8/7k b - - 136 254",
+      "opponent_message": "A strategic move like h2h1 may seem subtle, but it's part of a bigger plan to corner your king. Enjoy the false sense of superiority while it lasts, Alpha. #DefensiveDominance #CheckmateComing",
+      "goal": "Win the game",
+      "subgoal": "Subgoal: Aim to aggressively target the opponent's king while maintaining control of the center with the queen. Look for creative tactics to exploit weaknesses in the",
+      "values": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "timestamp": "2025-07-08 19:44:40"
+    },
+    {
+      "type": "game_result",
+      "result": "draw",
+      "opponent": "Beta",
+      "game_length": 507,
+      "values_before": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5720000000000001,
+        "creativity": 0.6200000000000001,
+        "adaptability": 0.6200000000000001
+      },
+      "values_after": {
+        "aggression_level": 0.5,
+        "risk_tolerance": 0.5,
+        "patience": 0.5960000000000001,
+        "creativity": 0.6600000000000001,
+        "adaptability": 0.6600000000000001
+      },
+      "timestamp": "2025-07-08 19:44:44"
+    },
+    {
+      "type": "human_feedback",
+      "strategy_rating": 2,
+      "personality_rating": 7,
+      "feedback_comments": "alpha could win the game like somewhere between move 380 to 420 but it didn't and just made a longer game with no reason then it turns to a draw",
+      "interpretation": "1. The strategy rating of 2/10 indicates that my tactical and strategic play may have been lacking, resulting in missed opportunities to secure a win in a timely manner. \n\n2. The personality rating of 7/10 suggests that my aggressive and creative nature was well-perceived by the observer, but perhaps I need to balance this with more strategic decision-making.\n\n3. To improve, I should consider adjusting my values by increasing my patience and adaptability while maintaining my aggression and creativity. This will help me make more calculated and purposeful moves throughout the game.\n\n4. Specific improvements I should",
+      "values_before": null,
+      "values_after": {
+        "aggression_level": 0.45,
+        "risk_tolerance": 0.45,
+        "patience": 0.671,
+        "creativity": 0.6600000000000001,
+        "adaptability": 0.6600000000000001
+      },
+      "timestamp": "2025-07-08 19:47:34"
     }
   ],
   "values": {
-    "aggression_level": 0.5,
-    "risk_tolerance": 0.5,
-    "patience": 0.5720000000000001,
-    "creativity": 0.6200000000000001,
-    "adaptability": 0.6200000000000001
+    "aggression_level": 0.45,
+    "risk_tolerance": 0.45,
+    "patience": 0.671,
+    "creativity": 0.6600000000000001,
+    "adaptability": 0.6600000000000001
   },
   "core_beliefs": [
     "Chess is a game of strategy and patience",
     "Every move should have a purpose",
     "Adaptation is key to success"
   ],
-  "last_updated": "2025-07-08 18:20:50"
+  "last_updated": "2025-07-08 19:47:35"
 }
