@@ -63,6 +63,7 @@ The viewer is for trusted local logs. Access control, filename boundaries and
 production deployment need further review. The original direct-script entry point
 starts a network-visible debug server; use the loopback Flask command above.
 
-**Licensing is unresolved:** the earlier README stated MIT, but there is no
-LICENSE file. Maintainer confirmation has been requested; this update adds no
-license grant. Existing history and dependency/asset rights remain unchanged.
+## License
+
+Developed by Ramtin Farzane. This repository is unlicensed; no license grant is
+provided. Third-party packages and assets retain their own license terms.
