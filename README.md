@@ -65,5 +65,13 @@ starts a network-visible debug server; use the loopback Flask command above.
 
 ## License
 
-Developed by Ramtin Farzane. This repository is unlicensed; no license grant is
-provided. Third-party packages and assets retain their own license terms.
+Copyright (c) 2025–2026 Ramtin Farzane.
+
+The original project code and documentation are free software under the
+GNU General Public License, version 3 or (at your option) any later version
+(`GPL-3.0-or-later`). See [LICENSE](LICENSE) for the full terms and warranty
+disclaimer.
+
+Third-party packages and artwork retain their own copyrights and license terms.
+In particular, python-chess uses GPL-3.0-or-later, and the board images include
+Colin M. L. Burnett's chess-piece artwork. See [third-party notices](docs/third-party-notices.md).
