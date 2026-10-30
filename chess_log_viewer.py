@@ -79,6 +79,19 @@ def parse_game_log(log_file_path):
                 game_data['errors'].append(line.strip())
         
         # Parse moves
+        move_fields = {
+            'Move': 'move',
+            'Reasoning': 'reasoning',
+            'Time taken': 'time_taken',
+            'Feeling': 'feeling',
+            'Subgoal': 'subgoal',
+            'Dialogue': 'dialogue',
+            'Question': 'question',
+            'Answer': 'answer',
+            'Reflection': 'reflection',
+            'Mode': 'game_mode',
+            'Board Image': 'svg_file',
+        }
         current_move = None
         for line in lines:
             if re.match(r'Move \d+ - .+:', line):
@@ -106,28 +119,9 @@ def parse_game_log(log_file_path):
                         'svg_file': None
                     }
             elif current_move:
-                if line.strip().startswith('  Move:'):
-                    current_move['move'] = line.replace('  Move:', '').strip()
-                elif line.strip().startswith('  Reasoning:'):
-                    current_move['reasoning'] = line.replace('  Reasoning:', '').strip()
-                elif line.strip().startswith('  Time taken:'):
-                    current_move['time_taken'] = line.replace('  Time taken:', '').strip()
-                elif line.strip().startswith('  Feeling:'):
-                    current_move['feeling'] = line.replace('  Feeling:', '').strip()
-                elif line.strip().startswith('  Subgoal:'):
-                    current_move['subgoal'] = line.replace('  Subgoal:', '').strip()
-                elif line.strip().startswith('  Dialogue:'):
-                    current_move['dialogue'] = line.replace('  Dialogue:', '').strip()
-                elif line.strip().startswith('  Question:'):
-                    current_move['question'] = line.replace('  Question:', '').strip()
-                elif line.strip().startswith('  Answer:'):
-                    current_move['answer'] = line.replace('  Answer:', '').strip()
-                elif line.strip().startswith('  Reflection:'):
-                    current_move['reflection'] = line.replace('  Reflection:', '').strip()
-                elif line.strip().startswith('  Mode:'):
-                    current_move['game_mode'] = line.replace('  Mode:', '').strip()
-                elif line.strip().startswith('  Board Image:'):
-                    current_move['svg_file'] = line.replace('  Board Image:', '').strip()
+                label, separator, value = line.strip().partition(':')
+                if separator and label in move_fields:
+                    current_move[move_fields[label]] = value.strip()
         
         # Add the last move
         if current_move:
@@ -248,4 +242,4 @@ def serve_svg(filename):
     return send_from_directory('board_images', filename, mimetype='image/svg+xml')
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000) 
+    app.run(debug=True, host='0.0.0.0', port=5000)
