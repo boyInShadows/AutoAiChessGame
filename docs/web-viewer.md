@@ -32,4 +32,5 @@ On 2026-10-30, parser/rendering regressions, synthetic list/detail/404/SVG respo
 and a two-move Edge walkthrough passed. No paid calls or real feedback test ran.
 Styles/icons use public Bootstrap and Font Awesome CDNs. Use trusted local exports;
 production authentication, filename boundaries and full accessibility are unverified.
-This repository is unlicensed; see the root README's license section.
+The original project code/documentation use GPL-3.0-or-later; see the
+[license](../LICENSE) and [third-party notices](third-party-notices.md).
